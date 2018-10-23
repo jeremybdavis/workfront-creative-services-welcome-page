@@ -1,0 +1,18 @@
+.no-bs h1,
+.headline {
+    color: #e05929;
+}
+
+.section {
+    padding: 60px;
+}
+
+.hero {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .section {
+        padding: 80px;
+    }
+}
