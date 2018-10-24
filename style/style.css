@@ -1,5 +1,5 @@
 .no-bs h1,
-.headline {
+.no-bs .headline {
     color: #e05929;
     font-family: 'Domine', 'serif';
     font-weight: 700;
@@ -11,6 +11,7 @@
 
 .no-bs p {
     font-family: 'Arimo', sans-serif;
+    font-size: 18px;
 }
 
 .no-bs .btn {
@@ -28,8 +29,16 @@
     font-size: 52px;
 }
 
+.no-bs .container-fluid {
+    padding: 0;
+}
+
 .section {
     padding: 60px;
+}
+
+.no-bs .headline {
+    font-size: 36px;
 }
 
 .hero {
@@ -48,9 +57,40 @@
     width: 100%;
 }
 
+.grey-bg {
+    background-color: #ede9e6;
+}
+
+.hello,
+.headline {
+    text-align: center;
+}
+
+.hello p {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.no-bs .hello a {
+    color: #e05929;
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+}
+
+.no-bs .hello a:hover {
+    color: #e05929;
+    opacity: .6;
+}
+
+
 @media (min-width: 768px) {
     .no-bs .btn {
         font-size: 16px;
+    }
+
+    .hello p {
+        max-width: 525px;
+        margin: 0 auto;
     }
 }
 
@@ -69,6 +109,10 @@
 
     .hero p {
         font-size: 22px;
+    }
+
+    .hello p {
+        max-width: 545px;
     }
 }
 
