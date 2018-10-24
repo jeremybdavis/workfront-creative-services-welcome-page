@@ -1,6 +1,31 @@
 .no-bs h1,
 .headline {
     color: #e05929;
+    font-family: 'Domine', 'serif';
+    font-weight: 700;
+}
+
+.no-bs h1 {
+    font-size: 72px;
+}
+
+.no-bs p {
+    font-family: 'Arimo', sans-serif;
+}
+
+.no-bs .btn {
+    background-color: #e05929;
+    border-radius: 0;
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px;
+    white-space: normal;
+}
+
+.no-bs h1 {
+    font-size: 52px;
 }
 
 .section {
@@ -11,8 +36,63 @@
     text-align: center;
 }
 
+.hero p {
+    font-size: 18px;
+}
+
+.hero .row {
+    padding-top: 60px;
+}
+
+.hero .btn {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .no-bs .btn {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 992px) {
     .section {
         padding: 80px;
+    }
+
+    .no-bs h1 {
+        font-size: 72px;
+    }
+
+    .no-bs .btn {
+        padding: 15px 25px;
+    }
+
+    .hero p {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .no-bs .btn {
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .no-bs .btn {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .no-bs .btn {
+        padding: 15px 60px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .no-bs .btn {
+        padding: 15px 100px;
     }
 }
