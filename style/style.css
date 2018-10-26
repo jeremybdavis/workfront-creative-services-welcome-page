@@ -84,7 +84,8 @@
     transition: all .3s ease-in-out;
 }
 
-.no-bs .hello a:hover {
+.no-bs .hello a:hover,
+.service-container a {
     color: #e05929;
     opacity: .6;
 }
