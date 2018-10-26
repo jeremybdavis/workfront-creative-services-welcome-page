@@ -22,7 +22,12 @@
     font-size: 18px;
     font-weight: 700;
     padding: 15px;
+    transition: all .3s ease-in-out;
     white-space: normal;
+}
+
+.no-bs .btn:hover {
+    background-color: rgba(224, 89, 41, 0.7);
 }
 
 .no-bs h1 {
@@ -41,7 +46,8 @@
     font-size: 36px;
 }
 
-.hero {
+.hero,
+.service-container p {
     text-align: center;
 }
 
@@ -71,7 +77,8 @@
     padding-bottom: 15px;
 }
 
-.no-bs .hello a {
+.no-bs .hello a,
+.service-container a {
     color: #e05929;
     text-decoration: underline;
     transition: all .3s ease-in-out;
@@ -80,6 +87,47 @@
 .no-bs .hello a:hover {
     color: #e05929;
     opacity: .6;
+}
+
+.no-bs .service-container p {
+    margin-bottom: 0;
+}
+
+.no-bs .service-container .headline {
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.service {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.service a {
+    color: #001641;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.service a:hover {
+    color: #001641;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.service img {
+    height: 35px;
+    width: 35px;
+    bottom: 2px;
+    position: relative;
 }
 
 
@@ -91,6 +139,10 @@
     .hello p {
         max-width: 525px;
         margin: 0 auto;
+    }
+
+    .service a {
+        font-size: 20px;
     }
 }
 
@@ -114,12 +166,25 @@
     .hello p {
         max-width: 545px;
     }
+
+    .service {
+        flex-basis: auto;
+        padding: 0 5px;
+    }
+
+    .service a {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 1200px) {
     .no-bs .btn {
         font-size: 20px;
         padding: 15px 40px;
+    }
+
+    .service {
+        padding: 0 10px;
     }
 }
 
