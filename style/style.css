@@ -27,7 +27,7 @@
 }
 
 .no-bs .btn:hover {
-    background-color: rgba(224, 89, 41, 0.7);
+    background-color: #001641;
 }
 
 .no-bs h1 {
@@ -85,9 +85,8 @@
 }
 
 .no-bs .hello a:hover,
-.service-container a {
-    color: #e05929;
-    opacity: .6;
+.service-container a:hover {
+    color: #001641;
 }
 
 .no-bs .service-container p {
@@ -106,29 +105,20 @@
 }
 
 .service {
+    display: flex;
     flex-basis: 100%;
     text-align: center;
 }
 
-.service a {
+.service p {
     color: #001641;
     font-weight: 700;
     font-size: 18px;
-    text-decoration: none;
-    transition: all .3s ease-in-out;
-}
-
-.service a:hover {
-    color: #001641;
-    text-decoration: none;
-    opacity: .7;
 }
 
 .service img {
     height: 35px;
     width: 35px;
-    bottom: 2px;
-    position: relative;
 }
 
 
@@ -142,7 +132,7 @@
         margin: 0 auto;
     }
 
-    .service a {
+    .service p {
         font-size: 20px;
     }
 }
@@ -173,7 +163,7 @@
         padding: 0 5px;
     }
 
-    .service a {
+    .service p {
         font-size: 22px;
     }
 }
